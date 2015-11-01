@@ -1,0 +1,72 @@
+<!--
+HTML inclass Demo
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About ITLP</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="Viewport" content="width=device-width" />
+	</head>
+	<body>
+	<div class="container">
+		<header>
+			<div class="align-center">
+				<img class="align-center-3" src="img/logo.jpg" />
+			</div>
+
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="btn">
+						<a href="bars.html">Sports Bars</a>
+					</li>
+					<li class="btn">
+						<a href="feeds.html">Sports Feed</a>
+					</li>
+				</ul>
+			</nav>			
+		</header>
+
+		<section id="main">
+			<div class="align-center">
+				<h1>Twitter Sports Feed</h1>
+			</div>
+
+			<div class="align-center-2">
+				<form class="about-form bordered-element" id="usrform" action="http://wilder.azurewebsites.net/echo" method="POST">
+					<div>
+						<label  for="leagueSelection">League:</label>
+						<select name="leagueSelection" id="leagueSelection">
+							<option disabled selected> -- select an option -- </option>
+							<option value="nb">NBA</option>
+							<option value="nf">NFL</option>
+							<option value="nh">NHL</option>
+							<option value="ml">MLS</option>
+						</select>
+						<br/>
+					</div>
+					<div>
+						<h3>Embed Twitter feed here depending on selection above.</h3>
+					</div>
+				</form>	
+			</div>
+			
+
+			
+		</section>
+
+		<footer>
+			&copy; Team Awesome! 
+		</footer>   
+	</div>
+	</body>
+</html>

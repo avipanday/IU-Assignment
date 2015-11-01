@@ -14,7 +14,7 @@ footer {
 body {
   font-family: Tahoma, verdana, sans-serif;
   font-size: 14px;
-  background-color:  #EBEBEB;
+  background-color: black;
 }
 
 html, body {
@@ -73,7 +73,7 @@ width: 150px;
 .container {
   width: 989px;
   margin: 0 auto;
-  background-color: #EBEBEB;
+  background-color: black;
   padding: 5px;
 }
 
@@ -118,13 +118,6 @@ a {
   overflow:hidden;
 }
 
-#about-right {
-  float:left;
-  width:40%;
-  overflow:hidden;
-  padding-left: 50px;
-}
-
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -147,6 +140,11 @@ a {
 
 .align-center {
   text-align: center;
+}
+
+.align-center-3 {
+  width: 300px;
+  height: auto;
 }
 
 .align-center-2 {
@@ -330,7 +328,7 @@ video {
     border-radius: 28px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 12px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     text-align: center;
