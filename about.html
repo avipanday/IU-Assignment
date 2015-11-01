@@ -1,0 +1,96 @@
+<!--
+HTML inclass Demo
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>About ITLP</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="Viewport" content="width=device-width" />
+	</head>
+	<body>
+	<div class="container">
+		<header>
+			<div class="align-center">
+				<img src="img/logo.jpg" />
+			</div>
+
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="btn">
+						<a href="contact.html">Contact</a>
+					</li>
+					<li class="btn">
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</nav>			
+		</header>
+
+		<section id="main">
+			<div class="align-center">
+				<h1>About ITLP</h1>
+			</div>
+
+			<div class="clearfix">
+				<div id="about-left">
+					<p>ITLP offers those with a passion for information technology the opportunity to grow their leadership skills, business acumen, and technology aptitude while building a career with unlimited potential. Program members lead by doing&ndash;gaining real&ndash;world experience by working on important and challenging projects alongside some of the brightest technical minds in the world.</p>
+
+					<p><strong>Offering:</strong></p>
+					<ul>
+						<li>Full-time, two-year program in which participants choose from multiple assignments</li>
+						<li>Assignments focus on system implementation, technical design and architecture, and operational excellence</li>
+						<li>Key pipeline for future leaders of GE's world-class global IT organizations</li>
+						<li>Global classroom experience and coursework in advanced information technology and more...</li>
+						<li>15-credit IT Leadership Certificate from Indiana University</li>
+					</ul>
+					<p>"ITLP means so much to GE. It's incredible to me how much energy and passion (ITLPs) bring to the table...and most importantly, how well they understand our&nbsp;strategy, and how what they're doing links directly to that."</p>
+					<p><strong>- Jamie Miller, SVP and CIO, GE</strong></p>
+				</div>
+
+				<img src="img/itlp_graphic.jpg" id="about-right">
+			</div>
+
+			<div class="align-center" id="about-video">
+				<video autoplay muted controls>
+					<source src="video/sample.mp4" type="video/mp4">
+					<source src="video/sample.ogg" type="video/ogg">
+				</video>
+			</div>
+
+			<!-- Could not find an ITLP video so the one above is just a placeholder. -->
+
+			<div class="align-center-2">
+				<form class="about-form bordered-element" id="usrform" action="http://wilder.azurewebsites.net/echo" method="POST">
+					<label class="clearfix">If you have a story about one of our ITLPs we would love to hear about it!</label>
+					<br />
+					<label>Name: </label>
+					<input type="text" name="aboutITLP" id="aboutITLP" />
+					<br />
+					<textarea id="about-text" name="comment" form="usrform">Enter text here...</textarea>
+					<br />
+					<div>
+						<input type="submit" value="Submit" />
+					</div>
+				</form>	
+			</div>
+			
+
+			
+		</section>
+
+		<footer>
+			&copy; 2015 Avi Panday Productions 
+		</footer>   
+	</div>
+	</body>
+</html>

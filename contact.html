@@ -1,0 +1,122 @@
+<!--
+HTML inclass Demo
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<meta name="Viewport" content="width=device-width" />
+	</head>
+	<body>
+	<div class="container">
+		<header>
+			<div class="align-center">
+				<img src="img/logo.jpg" />
+			</div>
+
+			<nav>
+				<ul>
+					<li class="btn">
+						<a href="index.html">Home</a>
+					</li>
+					<li class="btn">
+						<a href="contact.html">Contact</a>
+					</li>
+					<li class="btn">
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</nav>			
+		</header>
+
+		<section id="main">
+			<div class="align-center">
+				<h1>Contact Us</h1>
+			</div>
+
+			<div class="align-center-2">
+				<form name="usrform" class="contact-form bordered-element" id="usrform" onsubmit="return validateForm();" method="POST">
+					<div>
+						<label  for="userName">Name:</label>
+						<input type="text" name="userName" id="userName" />
+						<br/>
+					</div>
+					<div>
+						<label  for="bestWay">Best way to reach you:</label>
+						<select name="bestWay" id="bestWay">
+							<option disabled selected> -- select an option -- </option>
+							<option value="wp">Work phone</option>
+							<option value="cp">Cell phone</option>
+							<option value="em">Email</option>
+							<option value="im">Instant messenger</option>
+						</select>
+						<br/>
+					</div>
+					<div id="userNumberDiv">
+						<label  for="userNumber">Work phone:</label>
+						<input type="tel" name="userNumber" id="userNumber" />
+						<br/>
+					</div>
+					<div id="cellNumberDiv">
+						<label  for="cellNumber">Cell phone:</label>
+						<input type="tel" name="cellNumber" id="cellNumber" />
+						<br/>
+					</div>
+					<div id="userEmailDiv">
+						<label  for="userEmail">Email Address:</label>
+						<input type="email" name="userEmail" id="userEmail" />
+						<br/>
+					</div>
+					<div id="iMessengerDiv">
+						<label  for="iMessenger">Instant messenger:</label>
+						<input type="text" name="iMessenger" id="iMessenger" />
+						<br/>
+					</div>
+					<div>
+						<label for="contactTime">Best time to contact:</label>
+						<select name="contactTime" id="contactTime">
+							<option selected>Morning</option>
+							<option>Afternoon</option>
+							<option>Evening</option>
+							<option>Night</option>
+						</select>
+						<br />
+					</div>
+					<div>
+						<label for="usLocation">Located in US?</label>
+						<input type="checkbox" name="usLocation" id="usLocation" checked="true" /> 
+						<br/>
+					</div>
+					<div>
+						<label for="comment">Comments and/or Questions?</label>
+						<br />
+					</div>
+					<div>
+						<textarea id="about-text" name="comment" form="usrform">Enter them here...</textarea>
+						<br />
+					</div>
+					<div id="submitButton">
+						<input type="submit" value="Submit" />
+					</div>
+				</form>
+			</div>
+			
+
+		</section> 
+		<footer>
+			&copy; 2015 Avi Panday Productions 
+		</footer>   
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
+
+	</body>
+</html>
