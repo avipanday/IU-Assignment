@@ -6,9 +6,19 @@ HTML inclass Demo
 	<head>
 		<title>Sports Bars</title>
 		<!--[if lt IE 9]>
+<<<<<<< HEAD
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>      
 		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="css/site.css">
+=======
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/site.css">
+		<link rel="stylesheet" type="text/css" href="css/map.css">
+		<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-o_qnf6D0ap1JIhkidAkHCpkkfaJIxfE&libraries=places&callback=initMap" async defer></script>
+>>>>>>> Initial commit from Justin
 
 		<meta name="HandheldFriendly" content="true" />
 		<meta name="MobileOptimized" content="320" />
@@ -18,7 +28,11 @@ HTML inclass Demo
 	<div class="container">
 		<header>
 			<div class="align-center">
+<<<<<<< HEAD
 				<img class="align-center-3" src="img/logo.jpg" />
+=======
+			<img class="align-center-3" src="img/logo.jpg" />
+>>>>>>> Initial commit from Justin
 			</div>
 
 			<nav>
@@ -33,7 +47,11 @@ HTML inclass Demo
 						<a href="feeds.html">Sports Feed</a>
 					</li>
 				</ul>
+<<<<<<< HEAD
 			</nav>			
+=======
+			</nav>
+>>>>>>> Initial commit from Justin
 		</header>
 
 		<section id="main">
@@ -42,6 +60,7 @@ HTML inclass Demo
 			</div>
 
 			<div class="align-center-2">
+<<<<<<< HEAD
 				<form name="usrform" class="contact-form bordered-element" id="usrform" onsubmit="return validateForm();" method="POST">
 					<div>
 						<label  for="userName">Looking for a different location? Enter it here:</label>
@@ -70,3 +89,23 @@ HTML inclass Demo
 
 	</body>
 </html>
+=======
+				<label for="input">Input your address</label>
+				<input type"text" name="input" id="input"/>
+				<button id="submit">Submit</button>
+				<span>or</span>
+				<button id="findLocation" onclick="initMap()">Find my Location</button>
+
+					<h3 id="warn">Embed Google API here</h3>
+					<div id="map"></div>
+			</div>
+		</section>
+		<footer>
+			&copy; Team Awesome!
+		</footer>
+	</div>
+
+
+	</body>
+</html>
+>>>>>>> Initial commit from Justin

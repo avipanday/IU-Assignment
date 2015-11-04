@@ -20,6 +20,10 @@ body {
 html, body {
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
+=======
+  height: 100%;
+>>>>>>> Initial commit from Justin
 }
 
 .bordered-element {
@@ -125,6 +129,7 @@ a {
   content: " ";
   clear: both;
   height: 0;
+<<<<<<< HEAD
 }  
 .clearfix { 
   display: inline-block; 
@@ -136,6 +141,19 @@ a {
 
 .clearfix { 
   display: block; 
+=======
+}
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+>>>>>>> Initial commit from Justin
 }
 
 .align-center {
@@ -239,8 +257,13 @@ width: 150px;
   margin-top: 5px;
 }
 
+<<<<<<< HEAD
 #about-video {   
   padding-bottom: 50px; 
+=======
+#about-video {
+  padding-bottom: 50px;
+>>>>>>> Initial commit from Justin
 }
 
 #about-text {
