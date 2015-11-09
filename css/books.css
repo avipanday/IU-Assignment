@@ -1,0 +1,38 @@
+.simple-form {
+    width: 90%;
+}
+
+#main {
+    overflow: hidden;
+    text-align: center;
+}
+
+#menu {
+    vertical-align:middle;
+    display: inline-block;
+}
+
+#bookSearch {
+    float:left;
+    width: 33%;
+    text-align: left;
+    height: 100%;
+}
+
+#or {
+    display: inline-block;
+    width: 33%;
+    height: 100%;
+    margin-top:10%;
+}
+
+#randomBooks {
+    float:right;
+    width: 33%;
+    height: 100%;
+}
+
+.populated-results {
+    overflow-y: scroll;
+    height: 500px;
+}
