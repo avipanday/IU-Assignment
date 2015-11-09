@@ -94,11 +94,13 @@ header > nav {
 header > nav > ul {
   margin: 0px;
   padding-left: 5px;
+  text-align:center;
 }
 
 header > nav > ul > li {
   display: inline;
   font-size: 18px;
+  padding: 10px;
 }
 
 header > nav > ul > li > a {

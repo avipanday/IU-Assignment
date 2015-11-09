@@ -1,0 +1,19 @@
+/*
+#in-button {
+    background: url(../img/book-open.png) no-repeat;
+}
+
+#out-button {
+    background-image: url(../img/glass.png) no-repeat;
+}
+*/
+button {
+    width: 200px;
+    height: 50px;
+}
+
+
+.button-container {
+    width: 33%;
+    display: inline-block;
+}
