@@ -6,8 +6,21 @@ html, body{
 
 .align-center-2 {
     height: 100%;
+    text-align: center;
 }
 
 #map {
     height: 750px;
 }
+
+.simple-form {
+    width: 90%;
+    text-align: center;
+}
+
+.menu {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

@@ -14,7 +14,7 @@ function initMap(position) {
     center: {lat: -33.8688, lng: 151.2195},
     zoom: 14,
     mapTypeId: google.maps.MapTypeId.ROADMAP
-});
+    });
   geocoder = new google.maps.Geocoder();
   infowindow = new google.maps.InfoWindow();
 
@@ -84,6 +84,11 @@ function findLocation() {
     var address = document.getElementById('input').value;
     var position;
     console.log("Geocoding address: " + address);
+     map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -33.8688, lng: 151.2195},
+    zoom: 14,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
     geocoder.geocode({'address':address}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             position = results[0].geometry.location;
