@@ -32,7 +32,7 @@ function searchRandomBooks() {
         for (var i = 0; i < data.items.length; i++) {
             var r = data.items[i];
             console.log(r);
-            $("#results").append(buildResult(r.volumeInfo.title, r.volumeInfo.authors, r.volumeInfo.description))
+            $("#results").append(buildResult(r.volumeInfo.title, r.volumeInfo.authors, r.volumeInfo.description, r.volumeInfo.previewLink))
         }
     });
 }
@@ -46,7 +46,7 @@ function buildSearchUrl(title, author, subject, isbn) {
     return base + appendTitle + appendAuthor + appendSubject + appendIsbn;
 }
 
-function buildResult(title, authors, description) {
+function buildResult(title, authors, description, previewUrl) {
     if (title && authors && description)
-        return '<div class="bordered-element"><h3>' + title + '</h3><h4>' + authors + '</h4><span>' + description + '</span></div>';
+        return '<div class="bordered-element"><h3>' + title + '</h3><h4>' + authors + '</h4><span>' + description + '</span><br/><a target="_blank" href="' + previewUrl + '">Preview book</a></div>';
 }
